@@ -1,6 +1,6 @@
 # Photobooth
 
-This is a very small Python script that is used to:
+This is a very small Python script for Windows XP that is used to:
 * move the pictures from the shared folder to your subfolder of htdocs to upload pictures to your local webserver (xampp)
 * print pictures using a photoprinter (or any other printer connected to your computer)
 

@@ -19,7 +19,7 @@ while True:
 	if (num_files_new > num_files_old):
 
 		# Get the latest file of the folder = the newest pic
-		files = glob.glob("YPUT YOUR PATH HERE/*")
+		files = glob.glob("PUT YOUR PATH HERE/*")
 		new_pic = max(files, key = os.path.getctime)
 		
 		print ("A new picture has been added")
@@ -36,7 +36,7 @@ while True:
 		subprocess.call(prt_string, shell=True)
 		
 		# Modify the string (for file moving) for the command line call
-		trf_string = r'move ' + '"' + change_string + '"' + ' ' + '"' + r'C:\xampp\htdocs\PUT YOUR PATH HERE' +'"'
+		trf_string = r'move ' + '"' + change_string + '"' + ' ' + '"' + r'C:\xampp\htdocs\PUT PATH TO YOUR SUBFOLDER HERE' +'"'
 
 		# Move the newest pic into the directory of the xampp webserver
 		subprocess.call(trf_string, shell=True)
